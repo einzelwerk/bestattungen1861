@@ -150,8 +150,8 @@ button {
     content: "";
     position: absolute;
     left: 0;
-    width: 1px;
-    height: 85%;
+    width: 2px;
+    height: 90%;
     top: 50%;
     transform: translateY(-50%);
     background-color: #d4422c;
@@ -244,11 +244,22 @@ button {
 .feuerbestattung__grid-img {
     border-radius: 12px;
     width: 100%;
+    object-fit: cover;
 }
 
 @media(max-width: 1024px) {
     .feuerbestattung__grid-img {
         order: 2
+    }
+}
+
+@media(max-width: 768px) {
+    .feuerbestattung__grid-img {
+        height: 240px;
+    }
+    
+    .aimwiesenbestattung .feuerbestattung__grid-img {
+        height: 180px;
     }
 }
 
