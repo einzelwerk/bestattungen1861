@@ -52,11 +52,25 @@ button {
     color: #D4422C;
 }
 
+@media(min-width: 1024px) {
+    .subtitle {
+        font-size: 21px;
+    }
+}
+
+.subtitle.fz-18 {
+    font-size: 18px;
+}
+
 .text {
     font-size: 18px;
     font-weight: 500;
     line-height: 156%;
     color: #333;
+}
+
+.text.fz-16 {
+    font-size: 16px;
 }
 
 .text.text-semibold {
@@ -230,6 +244,12 @@ button {
 .feuerbestattung__grid-img {
     border-radius: 12px;
     width: 100%;
+}
+
+@media(max-width: 1024px) {
+    .feuerbestattung__grid-img {
+        order: 2
+    }
 }
 
 .feuerbestattung__grid-item {
